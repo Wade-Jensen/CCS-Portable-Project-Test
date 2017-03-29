@@ -137,32 +137,32 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-ProjectTemplate_RTOS.out \
+Testing_Station_RTOS.out \
 
 EXE_OUTPUTS__QUOTED += \
-"ProjectTemplate_RTOS.out" \
+"Testing_Station_RTOS.out" \
 
 BIN_OUTPUTS += \
-ProjectTemplate_RTOS.hex \
+Testing_Station_RTOS.hex \
 
 BIN_OUTPUTS__QUOTED += \
-"ProjectTemplate_RTOS.hex" \
+"Testing_Station_RTOS.hex" \
 
 
 # All Target
-all: ProjectTemplate_RTOS.out
+all: Testing_Station_RTOS.out
 
 # Tool invocations
-ProjectTemplate_RTOS.out: $(OBJS) $(LDS_SRCS) $(GEN_CMDS)
+Testing_Station_RTOS.out: $(OBJS) $(LDS_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GNU Linker'
-	"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -DPART_TM4C129XNCZAD -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MD -std=c99 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"ProjectTemplate_RTOS.map" -nostartfiles -static -Wl,--gc-sections -L"C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/lib/armv7e-m/fpu" -L"C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc" -L"C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc" -o"ProjectTemplate_RTOS.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc.exe" -DPART_TM4C129XNCZAD -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -MD -std=c99 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-Map,"Testing_Station_RTOS.map" -nostartfiles -static -Wl,--gc-sections -L"C:/ti/tirtos_tivac_2_12_01_33/products/bios_6_41_04_54/packages/gnu/targets/arm/libs/install-native/arm-none-eabi/lib/armv7e-m/fpu" -L"C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/grlib/gcc" -L"C:/ti/tirtos_tivac_2_12_01_33/products/TivaWare_C_Series-2.1.0.12573c/driverlib/gcc" -o"Testing_Station_RTOS.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-ProjectTemplate_RTOS.hex: $(EXE_OUTPUTS)
+Testing_Station_RTOS.hex: $(EXE_OUTPUTS)
 	@echo 'Invoking: GNU Objcopy Utility'
-	"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-objcopy.exe"  $(EXE_OUTPUTS__QUOTED) "ProjectTemplate_RTOS.hex"
+	"C:/ti/ccsv7/tools/compiler/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-objcopy.exe"  $(EXE_OUTPUTS__QUOTED) "Testing_Station_RTOS.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 

@@ -1,6 +1,6 @@
 #
 # This file was generated based on the configuration script:
-#     C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_4_SEM_1\EGH456\Assignment\ProjectTemplate_RTOS\app.cfg
+#     C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_4_SEM_1\EGH456\Assignment\Testing_Station_RTOS\app.cfg
 #
 # This makefile may be included in other makefiles that need to build
 # the libraries containing the compiled source files generated as
@@ -14,7 +14,7 @@
 #
 # The absolute path to the generated source directory (at the time the
 # sources were generated) is:
-#    C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_4_SEM_1\EGH456\Assignment\ProjectTemplate_RTOS\src
+#    C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_4_SEM_1\EGH456\Assignment\Testing_Station_RTOS\src
 #
 GEN_SRC_DIR ?= ../src
 
