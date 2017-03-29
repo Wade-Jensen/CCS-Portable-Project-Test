@@ -1,9 +1,7 @@
 # EGH456
-Project for EGH456. Embedded Electronics with Tiva Board
+Project for EGH456. Embedded Electronics with Tiva Board  
 
-######## Installation
-
-##### Installation
+### Installation
 Download the TI Examples folder from Blackboard, unzip it, and place
 the TivaWare_C_Series-2.1.3.156 folder in the root directory of the
 repository. There is a .gitignore rule setup so the folder will not
@@ -17,7 +15,7 @@ Code Composer Studio -> Build -> Variables
 Add a new variable called "TI_LIB_ROOT", the value will be the file path
 to the TivaWare_C_Series-2.1.3.156 folder you just unzipped.
 
-Download:
+### Download:
 
 **NDK 2.24.02.31**  
 <http://software-dl.ti.com/dsps/dsps_public_sw/sdo_sb/targetcontent/ndk/index.html>  
